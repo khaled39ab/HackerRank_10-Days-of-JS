@@ -38,15 +38,36 @@ function getLetter(s) {
     let letter;
     // Write your code here
     let firstChar = s.charAt(0);
-    if (firstChar === 'a' || firstChar === 'e' || firstChar === 'i' || firstChar === 'o' || firstChar === 'u') {
-        console.log('A');
-    } else if (firstChar === 'b' || firstChar === 'c' || firstChar === 'd' || firstChar === 'f' || firstChar === 'g') {
-        console.log('B');
-    } else if (firstChar === 'h' || firstChar === 'j' || firstChar === 'k' || firstChar === 'l' || firstChar === 'm') {
-        console.log('C');
-    } else if (firstChar === 'n' || firstChar === 'p' || firstChar === 'q' || firstChar === 'r' || firstChar === 's' || firstChar === 't' || firstChar === 'v' || firstChar === 'w' || 'x' || 'y' || 'z') {
-        console.log('D');
-    }
+
+    /* 
+        if (firstChar === 'a' || firstChar === 'e' || firstChar === 'i' || firstChar === 'o' || firstChar === 'u') {
+            console.log('A');
+        } else if (firstChar === 'b' || firstChar === 'c' || firstChar === 'd' || firstChar === 'f' || firstChar === 'g') {
+            console.log('B');
+        } else if (firstChar === 'h' || firstChar === 'j' || firstChar === 'k' || firstChar === 'l' || firstChar === 'm') {
+            console.log('C');
+        } else if (firstChar === 'n' || firstChar === 'p' || firstChar === 'q' || firstChar === 'r' || firstChar === 's' || firstChar === 't' || firstChar === 'v' || firstChar === 'w' || 'x' || 'y' || 'z') {
+            console.log('D');
+        }
+     */
+
+        switch (firstChar) {
+            case 'a' || 'e' || 'i' || 'o' || 'u':
+                letter = "A";
+                break;
+            
+            case 'b' || 'c' || 'd' || 'f' || 'g':
+                letter = "B"
+                break;
+    
+            case 'h' || 'j' || 'k' || 'l' || 'm':
+                letter = "C";
+                break;
+    
+            default:
+                letter = "D";
+        }
+
     return letter;
 }
 
