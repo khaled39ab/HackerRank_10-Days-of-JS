@@ -57,9 +57,11 @@ function vowelsAndConsonants(s) {
         }
     }
 }
-vowelsAndConsonants('javascriptloops')
-/* function main() {
+
+// vowelsAndConsonants('javascriptloops')
+
+function main() {
     const s = readLine();
     
     vowelsAndConsonants(s);
-} */
+}
