@@ -10,7 +10,7 @@ Returns
 *int: the second largest number in nums
 
  */
-/* 'use strict';
+'use strict';
 
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
@@ -32,7 +32,7 @@ process.stdin.on('end', _ => {
 
 function readLine() {
     return inputString[currentLine++];
-} */
+}
 
 /**
 *   Return the second largest number in the array.
@@ -47,11 +47,9 @@ function getSecondLargest(nums) {
     return max
 }
 
-console.log(getSecondLargest([48, 95, 90, 54, 23]));
-
-/* function main() {
+function main() {
     const n = +(readLine());
     const nums = readLine().split(' ').map(Number);
     
     console.log(getSecondLargest(nums));
-} */
+}
