@@ -41,10 +41,18 @@ function readLine() {
 **/
 function getSecondLargest(nums) {
     // Complete the function
-    var max = Math.max.apply(null, nums); // get the max of the array
-    nums.splice(nums.indexOf(max), 1); // remove max from the array
-    return Math.max.apply(null, nums);
-    return max
+    const temp = [];
+    for ( let i= 0; i < nums.length; i++){
+        const element = nums[i]
+        if (temp.indexOf(element) == -1){
+            temp.push(element)
+        }
+    }
+    
+    temp.sort(function(a, b){
+        return b - a;
+    })
+    return temp[1]
 }
 
 function main() {
